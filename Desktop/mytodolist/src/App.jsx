@@ -7,12 +7,17 @@ import { FcTodoList } from "react-icons/fc";
 import './index.css'
 import Navbar from './Components/Navbar'
 import Mytodo from './Components/Mytodo';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 function App() {
+   
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    
+    <motion.div
+
+    >
     <Navbar/>
     <div className=" mx-auto p-[2%] bg-zinc-900 w-full h-full mt-0">
       
@@ -28,7 +33,7 @@ function App() {
       <Mytodo/>
 
     </div>
-    </>
+    </motion.div>
   )
 }
 
